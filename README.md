@@ -1,6 +1,6 @@
 ### I) Overview :-
 
-This project contains AutoML Example.
+This project provides a sample usage of H2O's AutoML and StackedEnsemble Java API.
 
 ### II) Requirements :-
 
@@ -24,9 +24,15 @@ mvn install:install-file -Dfile=lib/sparkling-water-assembly_2.11-2.1.15-SNAPSHO
 mvn package
 ```
 
-#### 3. Run the example
+#### 3. Run the examples
+
+##### For AutoML :
 
 ```
 spark-submit --master local[*] --class com.vivekvetri.www.AutoMLExample target/h2o-automl-example-1.0-jar-with-dependencies.jar
 
+```
+##### For StackedEnsemble :
+```
+spark-submit --master local[*] --class com.vivekvetri.www.StackedEnsembleExample target/h2o-automl-example-1.0-jar-with-dependencies.jar
 ```
