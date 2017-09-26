@@ -1,0 +1,9 @@
+.idea
+parquet
+target
+*.iml
+*.log
+metastore_db
+local_data
+h2ologs
+output.txt
